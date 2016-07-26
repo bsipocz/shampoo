@@ -179,3 +179,8 @@ if eval(setup_cfg.get('edit_on_github')):
 
     edit_on_github_source_root = ""
     edit_on_github_doc_root = "docs"
+
+# Add additional Sphinx extensions:
+extensions += ['matplotlib.sphinxext.mathmpl',
+               'matplotlib.sphinxext.only_directives',
+               'matplotlib.sphinxext.plot_directive']
